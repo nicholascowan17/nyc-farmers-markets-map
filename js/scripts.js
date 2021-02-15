@@ -7,6 +7,9 @@ var map = new mapboxgl.Map({
   zoom: 9.8 // starting zoom
 });
 
+// disable map zoom when using scroll
+map.scrollZoom.disable();
+
 // add navigation control in top left
 var nav = new mapboxgl.NavigationControl();
 map.addControl(nav, 'top-right');
